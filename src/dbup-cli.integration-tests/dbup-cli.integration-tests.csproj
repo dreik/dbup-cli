@@ -6,7 +6,9 @@
 
   <ItemGroup>
     <PackageReference Include="dbup-postgresql" />
+    <PackageReference Include="Microsoft.Rest.ClientRuntime" />
     <PackageReference Include="MySql.Data" />
+    <PackageReference Include="Newtonsoft.Json" />
     <PackageReference Include="Npgsql" />
     <PackageReference Include="Testcontainers" />
     <PackageReference Include="Testcontainers.MsSql" />
@@ -20,11 +22,18 @@
   </ItemGroup>
   
   <ItemGroup>
-    <None Update="$Scripts\**"  CopyToOutputDirectory="PreserveNewest"  />
+    <None Update="$Scripts\**" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
   
   <ItemGroup>
     <Content Include="xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Update="xunit.runner.visualstudio">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

@@ -53,6 +53,8 @@
 		<PackageReference Include="JetBrains.Annotations" />
 		<PackageReference Include="Microsoft.Azure.KeyVault" />
 		<PackageReference Include="Microsoft.Azure.Services.AppAuthentication" />
+		<PackageReference Include="Microsoft.Rest.ClientRuntime" />
+		<PackageReference Include="Newtonsoft.Json" />
 		<PackageReference Include="Npgsql" />
 		<PackageReference Include="System.Text.Encoding.CodePages" />
 		<PackageReference Include="YamlDotNet" />
